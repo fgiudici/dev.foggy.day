@@ -2,3 +2,9 @@ baseURL = 'https://dev.foggy.day/'
 languageCode = 'en-us'
 title = 'Dev Notes'
 theme = 'hugo-PaperMod-8.0'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true

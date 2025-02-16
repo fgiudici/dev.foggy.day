@@ -1,3 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://dev.foggy.day/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Dev Notes'
+theme = 'hugo-PaperMod-8.0'

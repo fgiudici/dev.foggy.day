@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Dev Notes'
 theme = 'hugo-PaperMod-8.0'
 
+enableEmoji = true
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.parser]

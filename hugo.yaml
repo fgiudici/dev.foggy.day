@@ -1,6 +1,6 @@
 baseURL: 'https://dev.foggy.day/'
 languageCode: 'en-us'
-title: 'Dev NOtes'
+title: 'dev @ foggy.day'
 theme: 'hugo-PaperMod-8.0'
 
 enableEmoji: true
@@ -10,3 +10,15 @@ markup:
     parser:
       attribute:
         block: true
+
+#sectionPagesMenu: main
+menus:
+  main:
+  - name: Posts
+    pageRef: /posts
+    weight: 20
+  - name: GitHub
+    params:
+      rel: external
+    url: https://github.com/fgiudici
+    weight: 30

@@ -1,0 +1,12 @@
+baseURL: 'https://dev.foggy.day/'
+languageCode: 'en-us'
+title: 'Dev NOtes'
+theme: 'hugo-PaperMod-8.0'
+
+enableEmoji: true
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true

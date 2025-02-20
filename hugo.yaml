@@ -22,3 +22,9 @@ menus:
       rel: external
     url: https://github.com/fgiudici
     weight: 30
+
+params:
+  homeInfoParams:
+    Content: >
+      ![foggydaybanner](images/foggydaybanner.png)
+

@@ -4,7 +4,8 @@ date : 2025-02-16
 draft : false
 summary: 'systemd-sysext activates/deactivates system extension images. [...] (man systemd-sysext)'
 cover:
-  image : images/folders.png 
+  image : images/folders.png
+  hiddenInList: true
 ---
 
 *systemd-sysext activates/deactivates system extension images. [...]* (man systemd-sysext)

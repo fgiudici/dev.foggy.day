@@ -17,11 +17,6 @@ menus:
   - name: Posts
     pageRef: /posts
     weight: 20
-  - name: GitHub
-    params:
-      rel: external
-    url: https://github.com/fgiudici
-    weight: 30
 
 params:
   homeInfoParams:

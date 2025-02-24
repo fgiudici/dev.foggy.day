@@ -1,5 +1,5 @@
 ---
-date: '{{ time.Now.Format "2025-01-01" }}'
+date: '{{ time.Now.Format "2006-1-2" }}'
 draft: true
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 ---

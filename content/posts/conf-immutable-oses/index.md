@@ -6,6 +6,7 @@ summary: 'Immutable OSes usually allows or even require declarative configuratio
 cover:
   image: images/cloud-conf.png
   hiddenInList: true
+lastmod: '2025-05-10'
 ---
 
 Immutable OSes (like

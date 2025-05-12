@@ -86,7 +86,7 @@ If the desired system extension image requires a different file system than the 
 customized partitioning is needed, a *normal* disk format should be specified in the mkosi configuration
 file and the required configurations (the extension-release file and the systemd-repart configuration)
 should be provided explicitly.
->[!tip]
+>[!Tip]
 The partitioning configuration must be specified in the `mkosi.repart` subfolder.
 Additional files and folders to be copied in the final image should be put into the `mkosi.extra` folder.
 
@@ -145,6 +145,17 @@ Minimize=best
 
 Note that we changed the *Format* to *disk* in the mkosi configuration file for the helm image,
 so we had also to specify ourselves the *extension-release.helm* file required for an extension image.
+>[!Tip] Update
+Actually the default partition fs (erofs) comes from systemd-repart, used by mkosi under
+the hood. To change systemd-repart default fs it is enough to set the
+`SYSTEMD_REPART_OVERRIDE_FSTYPE_ROOT` environment variable to the desired fs type.
+This could be achieved in the [Build] section of the mkosi configuration:
+>```
+>[Build]
+>Environment=SYSTEMD_REPART_OVERRIDE_FSTYPE_ROOT=squashfs
+>```
+> example available on [:link:github](https://github.com/fgiudici/extension-images/tree/main/mkosi/)
+
 
 ## :link: External links
 :page_facing_up: [Daan De Meyer's mkosi blogpost](https://0pointer.net/blog/a-re-introduction-to-mkosi-a-tool-for-generating-os-images.html)
@@ -152,3 +163,5 @@ so we had also to specify ourselves the *extension-release.helm* file required f
 :clapper: [Daan De Meyer's mkosi talk at All Systems Go! conference](https://www.youtube.com/watch?v=6EelcbjbUa8)
 
 :floppy_disk: [mkosi project](https://github.com/systemd/mkosi)
+
+:floppy_disk: [mkosi example](https://github.com/fgiudici/extension-images/tree/main/mkosi/)
